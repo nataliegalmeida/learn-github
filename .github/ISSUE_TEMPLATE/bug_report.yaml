@@ -1,5 +1,5 @@
-name: Bug Report
-description: Relate um bug para nos ajudar a melhorar.
+nname: Bug Report
+description: Relate um bug para nos ajudar a melhorar o projeto.
 title: "[BUG] - "
 labels: [bug]
 assignees: []
@@ -8,14 +8,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Obrigado por abrir um relatório de bug! Por favor, preencha o formulário abaixo para que possamos investigar.
+        Obrigado por abrir um relatório de bug! Por favor, preencha o formulário abaixo para nos ajudar a entender e resolver o problema.
 
   - type: input
     id: environment
     attributes:
       label: Ambiente
-      description: Em qual ambiente o erro ocorreu? (ex: local, produção, container Docker, etc.)
-      placeholder: ex: Docker no Ubuntu 22.04
+      description: "Em qual ambiente o erro ocorreu? (ex: local, produção, Docker, etc.)"
+      placeholder: "ex: Docker no Ubuntu 22.04"
     validations:
       required: true
 
@@ -23,8 +23,8 @@ body:
     id: description
     attributes:
       label: Descrição do Bug
-      description: Descreva claramente o que está acontecendo.
-      placeholder: O que você esperava que acontecesse vs o que realmente aconteceu.
+      description: "Explique o que deveria acontecer e o que está realmente acontecendo."
+      placeholder: "Comportamento esperado vs observado"
     validations:
       required: true
 
@@ -32,35 +32,4 @@ body:
     id: steps
     attributes:
       label: Passos para reproduzir
-      description: Passos para reproduzir o erro.
-      placeholder: |
-        1. Vá até '...'
-        2. Clique em '...'
-        3. Veja o erro...
-    validations:
-      required: true
-
-  - type: textarea
-    id: logs
-    attributes:
-      label: Logs e mensagens de erro
-      description: Cole aqui qualquer mensagem de erro relevante.
-      render: shell
-
-  - type: input
-    id: version
-    attributes:
-      label: Versão do sistema
-      description: Versão do software onde o erro foi identificado.
-      placeholder: ex: v1.2.0
-
-  - type: dropdown
-    id: severity
-    attributes:
-      label: Severidade
-      description: Quão grave é o problema?
-      options:
-        - Baixa
-        - Média
-        - Alta
-        - Crítica
+      description: "Liste as
