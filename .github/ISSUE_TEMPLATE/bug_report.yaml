@@ -1,4 +1,4 @@
-nname: Bug Report
+name: Bug Report
 description: Relate um bug para nos ajudar a melhorar o projeto.
 title: "[BUG] - "
 labels: [bug]
@@ -32,4 +32,35 @@ body:
     id: steps
     attributes:
       label: Passos para reproduzir
-      description: "Liste as
+      description: "Liste as etapas necessárias para reproduzir o problema."
+      placeholder: |
+        1. Vá até '...'
+        2. Clique em '...'
+        3. Veja o erro...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs e mensagens de erro
+      description: "Inclua aqui qualquer mensagem de erro relevante."
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão
+      description: "Versão do sistema ou software em que o bug foi encontrado."
+      placeholder: "ex: v1.2.0"
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidade
+      description: "Qual o impacto do problema?"
+      options:
+        - Baixa
+        - Média
+        - Alta
+        - Crítica
